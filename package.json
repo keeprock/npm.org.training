@@ -16,6 +16,7 @@
     "jshint-stylish": "^1.0.1",
     "mocha": "^2.2.4",
     "normalize.css": "3.0.3",
+    "npm-expansions": "^2.2.3",
     "run-sequence": "^1.0.2"
   },
   "engines": {
