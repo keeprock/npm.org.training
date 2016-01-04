@@ -88,6 +88,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.container:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+
+input[type=text], input[type=search], input[type=email], input[type=password] {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    border-radius:4px;
+    color: rgba(0,0,0,0.8);
+}
+
+input[type=submit], .button {
+    text-align: center;
+    display: block;
+    padding: 0px 35px;
+    margin: 0px 0px 4px;
+    line-height: 47px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    clear:both;
+}
+
+
+a {
+    color: #cb3837;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 html {
     -webkit-font-smoothing: antialiased;
 }
@@ -143,6 +180,116 @@ body>nav a:hover {
 body>nav a:first-child:hover {
     background: none;
     border: none;
+}
+
+body>header {
+    padding: 14px 20px 13px;
+    border-bottom: 1px solid #d3d3d3;
+    background: hsla(0, 0%, 0%, 0.08);
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+}
+
+body>header>* {
+    flex: 0 0 auto;
+}
+
+#npm-logo {
+    order: 1;
+}
+
+#npm-logo img {
+    vertical-align: middle;
+    width: 125px;
+    height: 49px;
+}
+
+#user-info {
+    order: 3;
+}
+
+#user-info img {
+    float: right;
+    display: block;
+    width: 45px;
+    margin: 0px 0px 0px 10px;
+    border-radius: 2px;
+}
+
+#user-info ul {
+    float: right;
+    display: block;
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#user-info ul.single {
+    margin-top: 0;
+}
+
+#user-info ul.single li {
+    line-height:45px;
+    vertical-align: top;
+}
+
+#npm-search {
+    position: relative;
+    height: 47px;
+    padding:0;
+    margin: 0 1em;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    background: #fff;
+    text-align: left;
+    flex:1 0 auto;
+    order:2;
+}
+
+#npm-search:hover {
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+#site-search-container {
+    margin: 7px 80px 0px 7px;
+}
+
+#site-search {
+    background: none;
+    border: 0;
+    font-size: 18px;
+    font-weight: 300;
+    height: 30px;
+    margin: 0;
+    padding: 0 2px 0 0;
+    outline: 0;
+}
+
+#site-search-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 47px;
+    width: 46px;
+    border: 0;
+    text-indent:-9999em;
+    cursor: pointer;
+    outline: 0;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0 2px 2px 0;
+    background: url('../img/ico-search.svg') no-repeat 50% 50%;
+    background-size: 16px 16px;
+}
+
+#site-search-submit:hover {
+    border: 1px solid #ae2e2d;
+    border-bottom: none;
+    background: #cb3837;
+    color: #fff;
 }
 
 
