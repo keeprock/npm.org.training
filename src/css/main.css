@@ -180,10 +180,11 @@ body>nav a:hover {
 body>nav a:first-child:hover {
     background: none;
     border: none;
+    text-decoration: none;
 }
 
 body>header {
-    padding: 14px 20px 13px;
+    padding: 14px 20px 10px;
     border-bottom: 1px solid #d3d3d3;
     background: hsla(0, 0%, 0%, 0.08);
     display: flex;
@@ -288,7 +289,8 @@ body>header>* {
 #site-search-submit:hover {
     border: 1px solid #ae2e2d;
     border-bottom: none;
-    background: #cb3837;
+    background: #cb3837 url('../img/ico-search-hover.svg') no-repeat 50% 50%;
+    background-size: 16px 16px;
     color: #fff;
 }
 

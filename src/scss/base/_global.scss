@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding:0;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-stack;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  line-height: $font-lineheight-base;
+  letter-spacing: $font-spacing-base;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+}

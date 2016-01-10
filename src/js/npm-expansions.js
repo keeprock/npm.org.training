@@ -1,17 +1,16 @@
-var expansions = require('npm-expansions');
+var expansions = require('npm-expansions'),
+    clickCount = -1,
+    updateExpansion = function (event) {
+        var expansion = expansions[Math.floor(Math.random() * expansions.length)];
 
-var clickCount = -1;
+        if (event) event.preventDefault();
 
-var updateExpansion = function(event) {
-    if (event) event.preventDefault();
+        if (++clickCount > 10) {
+            return window.location = "https://github.com/npm/npm-expansions";
+        }
 
-    if (++clickCount > 10) {
-        return window.location = "https://github.com/npm/npm-expansions";
-    }
-
-    var expansion = expansions[Math.floor(Math.random() * expansions.length)];
-    $("#npm-expansions").text(expansion);
-};
+        $("#npm-expansions").text(expansion);
+    };
 
 $(function () {
     updateExpansion();

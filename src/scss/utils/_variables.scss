@@ -1,0 +1,33 @@
+/* Colors */
+
+// Main colors
+
+$color-accent: #cb3837;
+
+// Main Nav
+
+$color-nav-border-bottom: darken($color-accent, 6%);
+$color-nav-links: transparentize(white, 0.2);
+$color-nav-links-hover: #fff;
+
+
+/* Fonts */
+
+// Font stacks
+
+$font-stack: 'Source Sans Pro', 'Lucida Grande', sans-serif;
+
+// Font sizes
+
+$font-size-base: rem(16px);
+$font-size-nav-links: rem(14px);
+
+$font-weight-base: 400;
+$font-lineheight-base: 1.5;
+$font-spacing-base: -0.03em;
+
+// Main navigation
+
+$height-main-nav: 38px;
+
+
